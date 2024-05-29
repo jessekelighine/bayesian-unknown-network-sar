@@ -1,0 +1,27 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{settings-gloss}
+%-----------------------------------------------------------------------------%
+%%% Glossaries & Acronyms %%%
+\usepackage[style=long,acronym,toc]{glossaries}
+\renewcommand{\glossarypreamble}{\vspace*{-\baselineskip}}
+\renewcommand{\glsnamefont}[1]{\textbf{#1}}
+\renewcommand*{\glsgroupskip}{}
+\setlength\LTleft{0pt}
+\makeglossaries
+\newacronym{mcmc}{MCMC}{Markov Chain Monte Carlo}
+\newacronym{sar}{SAR}{Spatial Autoregressive Model}
+\newacronym{dag}{DAG}{Directed Acyclic Graph}
+\newacronym{ergm}{ERGM}{Exponential Random Graph Model}
+\newacronym{hmc}{HMC}{Hamiltonian Monte Carlo}
+\newacronym{mcmle}{MC-MLE}{Markov Chain Maximum Likelihood}
+\newacronym{mle}{MLE}{Maximum Likelihood Estimator}
+\newacronym{er}{ER}{Erd\H{o}s-R\'{e}nyi}
+\newacronym{mple}{MPLE}{Maximum Pseudolikelihood}
+\newacronym{mh}{M-H}{Metropolis-Hastings Algorithm}
+\newacronym{ex}{EX}{Exchange Algorithm}
+\newacronym{gg}{G-G}{Griddy-Gibbs Algorithm}
+\newacronym{dgp}{DGP}{Data Generation Process}
+\newacronym{mse}{MSE}{Mean Square Error}
+\newacronym{ads}{ADS}{Adaptive Directional Sampler}
+\newacronym{map}{MAP}{Maximum A Posteriori}
+%-----------------------------------------------------------------------------%

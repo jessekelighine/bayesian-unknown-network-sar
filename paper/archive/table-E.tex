@@ -1,0 +1,57 @@
+\begin{table}[t]
+	\footnotesize
+	\centering
+	\begin{tabular}{cl|rlrrr}
+		\toprule
+		\multirow{2}{*}{Spec.} & \multirow{2}{*}{Param.} & \multirow{2}{*}{True}  & \multirow{2}{*}{Prior Dist.} & \multirow{2}{*}{Post.\ Mean} & \multicolumn{2}{c}{$95\%$ Credible Interval} \\
+		& & & & & $Q_{2.5\%}$ & $Q_{97.5\%}$ \\
+		\midrule
+		\multirow{6}{*}{E1} % median F-score: 0.7654
+        & $\lambda$                        & $0.1$ & $\Uniform(-1,1)$      & $0.1072$  & $0.0484$  & $0.1684$  \\
+        & $\bbeta_{1,1}$                   & $2$   & $\Normal(0,30)$       & $2.0575$  & $1.9102$  & $2.1667$  \\
+        & $\bbeta_{1,2}$                   & $3$   & $\Normal(0,30)$       & $2.9881$  & $2.9460$  & $3.0309$  \\
+        & $\bbeta_{1,3}$                   & $1$   & $\Normal(0,30)$       & $0.8816$  & $0.6860$  & $1.0581$  \\
+        & $\sigma^{2}$                     & $2$   & $\InverseGamma(1,1)$  & $8.5542$  & $3.7912$  & $22.1335$ \\
+        & $\ttheta_{\text{\Verb"edges"}}$  & $-2$  & \blue{$\Normal(-2,0.25)$} & $-1.7128$ & $-2.7047$ & $-0.8437$ \\
+        & $\ttheta_{\text{\Verb"mutual"}}$ & $2$   & \blue{$\Normal(2,0.25)$}  & $1.0923$  & $-0.3322$ & $2.4224$  \\
+		\midrule
+		\multirow{6}{*}{E2} % median F-score: 0.7467
+        & $\lambda$                        & $0.1$ & $\Uniform(-1,1)$      &   $0.1069$  &   $0.0503$    &  $0.1697$\\
+        & $\bbeta_{1,1}$                   & $2$   & $\Normal(0,30)$       &   $2.0557$  &   $1.9096$    &  $2.1627$\\
+        & $\bbeta_{1,2}$                   & $3$   & $\Normal(0,30)$       &   $2.9882$  &   $2.9481$    &  $3.0323$\\
+        & $\bbeta_{1,3}$                   & $1$   & $\Normal(0,30)$       &   $0.8858$  &   $0.6860$    &  $1.0676$\\
+        & $\sigma^{2}$                     & $2$   & $\InverseGamma(1,1)$  &   $8.3333$  &   $3.7090$    & $21.4355$\\
+        & $\ttheta_{\text{\Verb"edges"}}$  & $-2$  & \blue{$\Normal(-2,1)$} &  $-1.7998$  &  $-2.7035$    & $-0.9358$\\
+        & $\ttheta_{\text{\Verb"mutual"}}$ & $2$   & \blue{$\Normal(2,1)$}  &   $1.3388$  &   $0.1476$    &  $2.4997$\\
+		\midrule
+		\multirow{6}{*}{E3} % median F-score: 0.7000
+        & $\lambda$                        & $0.1$ & $\Uniform(-1,1)$      &   $0.1070$  &   $0.0514$   &   $0.1678$\\
+        & $\bbeta_{1,1}$                   & $2$   & $\Normal(0,30)$       &   $2.0561$  &   $1.9093$   &   $2.1624$\\
+        & $\bbeta_{1,2}$                   & $3$   & $\Normal(0,30)$       &   $2.9863$  &   $2.9464$   &   $3.0318$\\
+        & $\bbeta_{1,3}$                   & $1$   & $\Normal(0,30)$       &   $0.8865$  &   $0.6889$   &   $1.0586$\\
+        & $\sigma^{2}$                     & $2$   & $\InverseGamma(1,1)$  &   $8.4676$  &   $3.7898$   &  $21.7789$\\
+        & $\ttheta_{\text{\Verb"edges"}}$  & $-2$  & \blue{$\Normal(0,1)$}   &  $-1.3765$  &  $-2.2014$   &  $-0.4347$\\
+        & $\ttheta_{\text{\Verb"mutual"}}$ & $2$   & \blue{$\Normal(0,1)$}   &   $0.3586$  &  $-1.0805$   &   $1.6536$\\
+		\midrule
+		\multirow{6}{*}{E4} % median F-score: 0.6829
+        & $\lambda$                        & $0.1$ & $\Uniform(-1,1)$      &   $0.1081$      & $0.0514$       & $0.1705$\\
+        & $\bbeta_{1,1}$                   & $2$   & $\Normal(0,30)$       &   $2.0543$      & $1.9034$       & $2.1610$\\
+        & $\bbeta_{1,2}$                   & $3$   & $\Normal(0,30)$       &   $2.9873$      & $2.9484$       & $3.0315$\\
+        & $\bbeta_{1,3}$                   & $1$   & $\Normal(0,30)$       &   $0.8828$      & $0.6832$       & $1.0600$\\
+        & $\sigma^{2}$                     & $2$   & $\InverseGamma(1,1)$  &   $8.5864$      & $3.8022$      & $21.5327$\\
+        & $\ttheta_{\text{\Verb"edges"}}$  & $-2$  & \blue{$\Normal(0,10)$} &  $-1.4930$     & $-2.4751$      & $-0.4114$\\
+        & $\ttheta_{\text{\Verb"mutual"}}$ & $2$   & \blue{$\Normal(0,10)$} &   $0.5187$     & $-1.2948$       & $2.0208$\\
+		\midrule
+		\multirow{6}{*}{E5} % median F-score: 0.6849
+        & $\lambda$                        & $0.1$ & $\Uniform(-1,1)$      &  $0.1059$  & $0.0451$  & $0.1688$ \\
+        & $\bbeta_{1,1}$                   & $2$   & $\Normal(0,30)$       &  $2.0566$  & $1.9060$  & $2.1623$ \\
+        & $\bbeta_{1,2}$                   & $3$   & $\Normal(0,30)$       &  $2.9852$  & $2.9443$  & $3.0280$ \\
+        & $\bbeta_{1,3}$                   & $1$   & $\Normal(0,30)$       &  $0.8939$  & $0.6844$  & $1.0742$ \\
+        & $\sigma^{2}$                     & $2$   & $\InverseGamma(1,1)$  &  $8.6710$  & $3.8258$  & $23.8211$\\
+        & $\ttheta_{\text{\Verb"edges"}}$  & $-2$  & \blue{$\Normal(0,10)$} &  $-1.2509$ & $-2.1331$ & $-0.3257$\\
+		& $\ttheta_{\text{\Verb"mutual"}}$ & $2$   & \blue{-}               &  & & \\
+		\bottomrule
+	\end{tabular}
+	\caption{Posterior Statistics}
+	\label{tab:E}
+\end{table}

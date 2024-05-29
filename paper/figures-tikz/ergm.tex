@@ -1,0 +1,35 @@
+\documentclass{standalone}
+%-----------------------------------------------------------------------------%
+\usepackage{settings-math}
+\usepackage{settings-color}
+%-----------------------------------------------------------------------------%
+%%% TikZ %%%
+\usepackage{tikz}
+% \usetikzlibrary{calc}
+% \usetikzlibrary{positioning}
+% \usetikzlibrary{patterns}
+% \usetikzlibrary{fit}
+% \usetikzlibrary{angles,quotes}
+% \usetikzlibrary{intersections}
+% \usetikzlibrary{decorations.markings}
+%-----------------------------------------------------------------------------%
+
+\begin{document}
+
+\begin{tikzpicture}[thick,line cap=round]
+	\tikzstyle{bai}=[solid,circle,draw,inner sep=.8pt,fill=white];
+	\tikzstyle{hei}=[solid,circle,draw,inner sep=.8pt,fill];
+	\node[inner sep=1pt,circle] (theta)  at (0,1)  {$\ttheta$};
+	\node[inner sep=1pt,circle] (W)      at (0,0)  {$\WW$};
+	\node[inner sep=1pt,circle] (lambda) at (1,0)  {$\lambda$};
+	\node[inner sep=1pt,circle] (beta)   at (2,0)  {$\bbeta$};
+	\node[inner sep=1pt,circle] (sigma2) at (3,0)  {$\sigma^2$};
+	\node[inner sep=1pt,circle] (y)      at (1.5,-1) {$\yy$};
+	\draw[->,myred,densely dotted] (theta)  to node[pos=0.5,right]{\footnotesize{ERGM}} (W);
+	\draw[->,myblue] (W)      to[out=-90,in=180] (y);
+	\draw[->,myblue] (lambda) to[out=-90,in=120] (y);
+	\draw[->,myblue] (beta)   to[out=-90,in=60] (y);
+	\draw[->,myblue] (sigma2) to[out=-90,in=0] node[pos=0.5,below right]{\footnotesize{SAR}} (y);
+\end{tikzpicture}
+
+\end{document}

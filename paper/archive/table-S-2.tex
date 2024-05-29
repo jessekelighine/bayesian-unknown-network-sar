@@ -1,0 +1,50 @@
+\begin{table}[t]
+	\footnotesize
+	\centering
+	\begin{tabular}{cl|rlrrr}
+		\toprule
+		\multirow{2}{*}{Spec.} &
+		\multirow{2}{*}{Param.} &
+		\multirow{2}{*}{True}  &
+		\multirow{2}{*}{Prior Dist.} &
+		\multirow{2}{*}{Post.\ Mean} &
+		\multicolumn{2}{c}{$95\%$ Credible Interval} \\
+		& & & & & $Q_{2.5\%}$ & $Q_{97.5\%}$ \\
+		\midrule
+		% \multirow{8}{*}{S3}
+		\multirow{8}{*}{\shortstack[c]{S3\\$\sigma_{\XX_{1,1}}=12$}}
+        & $\lambda$                        & $0.05$ & $\Uniform(-1,1)$     & $0.0139$  & $-0.0171$ & $0.0477$  \\
+        & $\bbeta_{1,1}$                   & $2$    & $\Normal(0,30)$      & $2.0023$  & $1.9665$  & $2.0355$  \\
+        & $\bbeta_{1,2}$                   & $1$    & $\Normal(0,30)$      & $1.0341$  & $0.1607$  & $1.9914$  \\
+        & $\bbeta_{2}$                     & $0.5$  & $\Normal(0,30)$      & $0.5942$  & $0.5208$  & $0.6577$  \\
+        & $\sigma^2$                       & $5$    & $\InverseGamma(1,1)$ & $5.7441$  & $4.6871$  & $7.0799$  \\
+        & $\ttheta_{\text{\Verb"edges"}}$  & $-1.8$ & $\Normal(-3,1)$      & $-0.6126$ & $-1.3535$ & $0.1301$  \\
+        & $\ttheta_{\text{\Verb"mutual"}}$ & $2.3$  & $\Normal(2,1)$       & $1.3610$  & $0.4290$  & $2.3197$  \\
+        & $\ttheta_{\text{\Verb"ctriad"}}$ & $-0.1$ & $\Normal(-0.5,1)$    & $-0.4297$ & $-0.8936$ & $-0.0083$ \\
+		\midrule
+		% \multirow{8}{*}{S4}
+		\multirow{8}{*}{\shortstack[c]{S4\\$\sigma_{\XX_{1,1}}=10$}}
+        & $\lambda$                        & $0.05$ & $\Uniform(-1,1)$     & $0.0221$  & $-0.0426$ & $0.0735$ \\
+        & $\bbeta_{1,1}$                   & $2$    & $\Normal(0,30)$      & $1.9849$  & $1.9513$  & $2.0144$ \\
+        & $\bbeta_{1,2}$                   & $1$    & $\Normal(0,30)$      & $0.8235$  & $0.1103$  & $1.6145$ \\
+        & $\bbeta_{2}$                     & $0.5$  & $\Normal(0,30)$      & $0.5898$  & $0.4544$  & $0.7556$ \\
+        & $\sigma^2$                       & $5$    & $\InverseGamma(1,1)$ & $4.9909$  & $4.0403$  & $6.2124$ \\
+        & $\ttheta_{\text{\Verb"edges"}}$  & $-1.8$ & $\Normal(-3,1)$      & $-0.5664$ & $-1.2985$ & $0.1625$ \\
+        & $\ttheta_{\text{\Verb"mutual"}}$ & $2.3$  & $\Normal(2,1)$       & $0.9091$  & $-0.0043$ & $1.9081$ \\
+        & $\ttheta_{\text{\Verb"ctriad"}}$ & $-0.1$ & $\Normal(-0.5,1)$    & $-0.2229$ & $-0.6240$ & $0.1200$ \\
+		\midrule
+		% \multirow{8}{*}{S6}
+		\multirow{8}{*}{\shortstack[c]{S6\\$\sigma_{\XX_{1,1}}=8$}}
+        & $\lambda$                        & $0.05$ & $\Uniform(-1,1)$     & $0.0207$  & $-0.0226$ & $0.0593$ \\
+        & $\bbeta_{1,1}$                   & $2$    & $\Normal(0,30)$      & $2.0168$  & $1.9487$  & $2.0704$ \\
+        & $\bbeta_{1,2}$                   & $1$    & $\Normal(0,30)$      & $1.1591$  & $0.4003$  & $1.8973$ \\
+        & $\bbeta_{2}$                     & $0.5$  & $\Normal(0,30)$      & $0.5604$  & $0.4547$  & $0.6551$ \\
+        & $\sigma^2$                       & $5$    & $\InverseGamma(1,1)$ & $5.6126$  & $4.3654$  & $7.6401$ \\
+        & $\ttheta_{\text{\Verb"edges"}}$  & $-1.8$ & $\Normal(-3,1)$      & $-0.4870$ & $-2.0636$ & $0.4039$ \\
+        & $\ttheta_{\text{\Verb"mutual"}}$ & $2.3$  & $\Normal(2,1)$       & $0.4569$  & $-0.5866$ & $1.8115$ \\
+        & $\ttheta_{\text{\Verb"ctriad"}}$ & $-0.1$ & $\Normal(-0.5,1)$    & $-0.0313$ & $-0.7160$ & $1.6251$ \\
+		\bottomrule
+	\end{tabular}\\
+	\caption{Posterior Statistics (Varying $\sigma_{\XX}$)}
+	\label{tab:S-2}
+\end{table}

@@ -1,0 +1,38 @@
+\documentclass{standalone}
+%-----------------------------------------------------------------------------%
+\usepackage{settings-math}
+\usepackage{settings-color}
+%-----------------------------------------------------------------------------%
+%%% TikZ %%%
+\usepackage{tikz}
+% \usetikzlibrary{calc}
+% \usetikzlibrary{positioning}
+% \usetikzlibrary{patterns}
+% \usetikzlibrary{fit}
+% \usetikzlibrary{angles,quotes}
+% \usetikzlibrary{intersections}
+% \usetikzlibrary{decorations.markings}
+%-----------------------------------------------------------------------------%
+
+\begin{document}
+
+\begin{tikzpicture}[thick,line cap=round,xscale=0.8]
+	\tikzstyle{bai}=[solid,circle,draw,inner sep=.8pt,fill=white];
+	\tikzstyle{hei}=[solid,circle,draw,inner sep=.8pt,fill];
+	\node (theta) at (0,0) {$\ttheta$};
+	\node (W1) at (-1, -1)   {$\WW_1$};
+	\node (Wg) at (0,  -1)   {$\cdots$};
+	\node (WG) at (1,  -1)   {$\WW_G$};
+	\node (y1) at (-1, -2.5) {$\yy_1$};
+	\node (yg) at (0,  -2.5) {$\cdots$};
+	\node (yG) at (1,  -2.5) {$\yy_G$};
+	\node (phi) at (3, -1) {$(\lambda,\bbeta,\sigma^2)$};
+	\draw[myred,->,densely dotted] (theta) -- (W1);
+	\draw[myred,->,densely dotted] (theta) -- node[above right]{\footnotesize{ERGM}} (WG);
+	\draw[myblue,->] (W1) -- node[left]{\footnotesize{SAR}} (y1);
+	\draw[myblue,->] (WG) -- (yG);
+	\draw[myblue,->] (phi) to[out=-100,in=40] (y1);
+	\draw[myblue,->] (phi) to[out=-100,in=10]  (yG);
+\end{tikzpicture}
+
+\end{document}

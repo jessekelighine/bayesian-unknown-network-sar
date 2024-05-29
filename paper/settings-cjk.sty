@@ -1,0 +1,14 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{settings-cjk}
+%-----------------------------------------------------------------------------%
+%%% xeCJK %%%
+\usepackage{xeCJK}
+\newcommand{\chmainfont}{GenWanMinTJ-L}
+\newcommand{\chsansfont}{NotoSansCJKkr-Regular}
+\newcommand{\chboldfont}{NotoSansCJKkr-Bold}
+\newcommand{\chmonofont}{jf-openhuninn-2.0}
+\newcommand{\chitalfont}{LXGWWenKaiTC-Regular}
+\setCJKmainfont{\chmainfont}[BoldFont=\chboldfont,ItalicFont=\chitalfont]
+\setCJKsansfont{\chsansfont}[BoldFont=\chboldfont]
+\setCJKmonofont{\chmonofont}
+%-----------------------------------------------------------------------------%

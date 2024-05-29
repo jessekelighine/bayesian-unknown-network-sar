@@ -1,0 +1,52 @@
+\begin{table}[t]
+	\footnotesize
+	\centering
+	\begin{tabular}{cl|rlrrr}
+		\toprule
+		\multirow{2}{*}{Spec.} & \multirow{2}{*}{Param.} & \multirow{2}{*}{True}  & \multirow{2}{*}{Prior Dist.} & \multirow{2}{*}{Post.\ Mean} & \multicolumn{2}{c}{$95\%$ Credible Interval} \\
+		& & & & & $Q_{2.5\%}$ & $Q_{97.5\%}$ \\
+		\midrule
+		\multirow{6}{*}{P1} % median F-score: 0.7654
+        & $\lambda$                        & $0.05$ & $\Uniform(-1,1)$          & $0.0028$  & $-0.0088$ & $0.0135$  \\
+        & $\bbeta_{1}$                     & $1$    & $\Normal(0,30)$           & $1.0012$  & $0.9848$  & $1.0165$  \\
+        & $\bbeta_{2}$                     & $0.5$  & $\Normal(0,30)$           & $0.5715$  & $0.5580$  & $0.5847$  \\
+        & $\sigma^2$                       & $2$    & $\InverseGamma(1,1)$      & $2.1017$  & $1.6062$  & $2.7360$  \\
+        & $\ttheta_{\text{\Verb"edges"}}$  & $-2$   & \blue{$\Normal(-2,0.25)$} & $-2.1791$ & $-2.7672$ & $-1.6394$ \\
+        & $\ttheta_{\text{\Verb"mutual"}}$ & $2$    & \blue{$\Normal(2,0.25)$}  & $1.9970$  & $1.1036$  & $2.8564$  \\
+		\midrule
+		\multirow{6}{*}{P2} % median F-score: 0.7467
+        & $\lambda$                        & $0.05$ & $\Uniform(-1,1)$          & $0.0030$  & $-0.0103$ & $0.0159$  \\
+        & $\bbeta_{1}$                     & $1$    & $\Normal(0,30)$           & $1.0005$  & $0.9809$  & $1.0178$  \\
+        & $\bbeta_{2}$                     & $0.5$  & $\Normal(0,30)$           & $0.5720$  & $0.5587$  & $0.5862$  \\
+        & $\sigma^2$                       & $2$    & $\InverseGamma(1,1)$      & $2.1084$  & $1.6014$  & $2.7894$  \\
+        & $\ttheta_{\text{\Verb"edges"}}$  & $-2$   & \blue{$\Normal(-2,1)$}    & $-2.0361$ & $-3.0748$ & $-1.1738$ \\
+        & $\ttheta_{\text{\Verb"mutual"}}$ & $2$    & \blue{$\Normal(2,1)$}     & $1.5667$  & $-0.3576$ & $3.3104$  \\
+		\midrule
+		\multirow{6}{*}{P3} % median F-score: 0.7000
+        & $\lambda$                        & $0.05$ & $\Uniform(-1,1)$          & $0.0026$  & $-0.0096$ & $0.0140$  \\
+        & $\bbeta_{1}$                     & $1$    & $\Normal(0,30)$           & $0.9999$  & $0.9798$  & $1.0181$  \\
+        & $\bbeta_{2}$                     & $0.5$  & $\Normal(0,30)$           & $0.5734$  & $0.5608$  & $0.5862$  \\
+        & $\sigma^2$                       & $2$    & $\InverseGamma(1,1)$      & $2.0920$  & $1.5801$  & $2.7813$  \\
+        & $\ttheta_{\text{\Verb"edges"}}$  & $-2$   & \blue{$\Normal(0,1)$}     & $-1.4876$ & $-2.1944$ & $-0.8523$ \\
+        & $\ttheta_{\text{\Verb"mutual"}}$ & $2$    & \blue{$\Normal(0,1)$}     & $0.5015$  & $-1.0357$ & $1.9618$  \\
+		\midrule
+		\multirow{6}{*}{P4} % median F-score: 0.6829
+        & $\lambda$                        & $0.05$ & $\Uniform(-1,1)$          & $0.0026$  & $-0.0087$ & $0.0135$  \\
+        & $\bbeta_{1}$                     & $1$    & $\Normal(0,30)$           & $0.9996$  & $0.9806$  & $1.0178$  \\
+        & $\bbeta_{2}$                     & $0.5$  & $\Normal(0,30)$           & $0.5737$  & $0.5616$  & $0.5860$  \\
+        & $\sigma^2$                       & $2$    & $\InverseGamma(1,1)$      & $2.0855$  & $1.5683$  & $2.7729$  \\
+        & $\ttheta_{\text{\Verb"edges"}}$  & $-2$   & \blue{$\Normal(0,1)$}     & $-1.3176$ & $-1.7803$ & $-0.8824$ \\
+        & $\ttheta_{\text{\Verb"mutual"}}$ & $2$    & \blue{-}                  & -         & -         & -         \\
+		\midrule
+		\multirow{6}{*}{P5} % median F-score: 0.6849
+        & $\lambda$                        & $0.05$ & $\Uniform(-1,1)$          & $0.0019$  & $-0.0092$ & $0.0129$  \\
+        & $\bbeta_{1}$                     & $1$    & $\Normal(0,30)$           & $1.0006$  & $0.9812$  & $1.0194$  \\
+        & $\bbeta_{2}$                     & $0.5$  & $\Normal(0,30)$           & $0.5737$  & $0.5617$  & $0.5858$  \\
+        & $\sigma^2$                       & $2$    & $\InverseGamma(1,1)$      & $2.0925$  & $1.5779$  & $2.7637$  \\
+        & $\ttheta_{\text{\Verb"edges"}}$  & $-2$   & \blue{$\Normal(0,10)$}    & $-1.3855$ & $-1.8826$ & $-0.9398$ \\
+        & $\ttheta_{\text{\Verb"mutual"}}$ & $2$    & \blue{-}                  & -         & -         & -         \\
+		\bottomrule
+	\end{tabular}
+	\caption{Posterior Statistics}
+	\label{tab:P}
+\end{table}

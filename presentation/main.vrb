@@ -1,0 +1,12 @@
+\frametitle{Sampson's Monk}
+\begin{center}
+^^I^^I\includegraphics[width=0.40\textwidth]{figures/sampson.pdf}
+^^I^^I\includegraphics[width=0.45\textwidth]{figures/sampson-W.pdf}
+^^I\end{center}
+^^I\begin{itemize}
+^^I^^I\item
+^^I^^I^^IWe use \acrshort{ergm} with
+^^I^^I^^I$\text{\Verb"edges"}=-3$,
+^^I^^I^^I$\text{\Verb"mutual"}=2$, and
+^^I^^I^^I$\text{\Verb"ctriad"}=-0.5$ as prior.
+^^I\end{itemize}

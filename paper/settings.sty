@@ -1,0 +1,88 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{settings}
+%-----------------------------------------------------------------------------%
+% \setsansfont{DIN Alternate}
+%-----------------------------------------------------------------------------%
+%%% Enumerate %%%
+\usepackage{enumitem}
+\usepackage{calc}
+\setlist{listparindent=\parindent} % paragraph indent
+%-----------------------------------------------------------------------------%
+%%% Table of Contents %%%
+\usepackage[titles]{tocloft}
+% \renewcommand\cftchapafterpnum{\vskip10pt}
+\setlength{\cftbeforesecskip}{.1em}
+% \renewcommand{\contentsname}{目錄}
+% \renewcommand{\cfttoctitlefont}{\sf\large}
+% \renewcommand{\cftsecfont}{\sf}
+% \renewcommand{\cftsubsecfont}{\sf}
+\makeatletter%
+\renewcommand\tableofcontents{\@starttoc{toc}}%
+\makeatother % no title
+%-----------------------------------------------------------------------------%
+%%% Graphics %%%
+\usepackage{graphicx}
+\usepackage{subcaption}
+%-----------------------------------------------------------------------------%
+%%% Hyper Reference %%%
+\PassOptionsToPackage{hyphens}{url}
+\usepackage{hyperref}
+\hypersetup{
+hidelinks,
+colorlinks = true,
+linkcolor = myred,
+urlcolor = myblue,
+citecolor = myblue
+}
+\makeatletter % \item[\itemlabel{label}{item name}]
+\def\itemlabel#1#2%
+{\begingroup#2\def\@currentlabel{#2}%
+\phantomsection\label{#1}\endgroup}%
+\makeatother
+%-----------------------------------------------------------------------------%
+%%% Section Font %%%
+\usepackage{titlesec}
+\titleformat*{\section}{\large\bfseries\raggedright}
+\titleformat*{\subsection}{\bfseries\raggedright}
+\titlespacing*{\paragraph}{0pt}{.5em}{1em}
+%-----------------------------------------------------------------------------%
+%%% Footnote %%%
+\usepackage[bottom]{footmisc}
+%-----------------------------------------------------------------------------%
+%%% Default Title %%%
+\makeatletter\def\@maketitle{%
+\newpage\null%
+\begin{center}%
+	\let\footnote\thanks%
+	{\Large\textsf{\@title}\par}%
+	\vskip1.5em%
+	{\large\lineskip.5em%
+	\begin{tabular}[t]{c}%
+		\@author%
+	\end{tabular}%
+	\par}%
+	\vskip1em%
+	{\large\@date}%
+\end{center}%
+\par\vskip1.5em}
+\makeatother
+%-----------------------------------------------------------------------------%
+%%% Date Time %%%
+\usepackage{datetime}
+\newtimeformat{zeit}%
+{\twodigit{\THEHOUR}:\twodigit{\THEMINUTE}}
+\settimeformat{zeit}%
+\newdateformat{meinesdatum}
+{\THEYEAR-\twodigit{\THEMONTH}-\twodigit{\THEDAY}}
+\setdefaultdate{\meinesdatum}
+%-----------------------------------------------------------------------------%
+%%% Fancy Verbatim %%%
+\usepackage{fancyvrb}
+%-----------------------------------------------------------------------------%
+%%% No Orphans and Widows %%%
+\widowpenalty10000
+\clubpenalty10000
+%-----------------------------------------------------------------------------%
+%%% Dinkus %%%
+\newcommand{\dinkus}{\vspace{.5em}\centerline{$*\ *\ *$}\vspace{.5em}}
+%-----------------------------------------------------------------------------%

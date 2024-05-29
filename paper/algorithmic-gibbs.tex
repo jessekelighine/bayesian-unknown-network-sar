@@ -1,0 +1,15 @@
+% - The `\hphantom{}` command creates a space with the length of its argument.
+% - The `\mathllap{}` command overlaps its argument on the previous character,
+%   and the first "l" makes that it is left-aligned.
+
+\begin{algorithmic}[1]
+	\STATE Initialize $(\lambda, \WW, \bbeta, \sigma^2, \ttheta)$
+	\WHILE{ \TRUE\ }
+	\STATE $\hphantom{W'}\mathllap{\bbeta'}$		  $\gets$ sample from $\pr(\bbeta\given\{\yy_{t}\},\lambda,\WW,\sigma^{2})$ exactly
+	\STATE $\hphantom{W'}\mathllap{\sigma^{2\prime}}$ $\gets$ sample from $\pr(\sigma^{2}\given\{\yy_{t}\},\lambda,\WW,\bbeta')$ exactly
+	\STATE $\hphantom{W'}\mathllap{\lambda'}$		 $\gets$ sample from $\pr(\lambda\given\{\yy_{t}\},\WW,\bbeta',\sigma^{2\prime})$ with \gls{mh}
+	\STATE $\hphantom{W'}\mathllap{\WW'}$			 $\gets$ sample from $\pr(\WW\given\{\yy_{t}\},\lambda',\bbeta',\sigma^{2\prime},\ttheta)$ with \gls{hmc}
+	\STATE $\hphantom{W'}\mathllap{\ttheta'}$		 $\gets$ sample from $\pr(\ttheta\given\WW')$ with \gls{ex}
+	\STATE $(\lambda,\WW,\bbeta,\sigma^2,\ttheta)$	$\gets$ $(\lambda',\WW',\bbeta',\sigma^{2\prime},\ttheta')$
+	\ENDWHILE
+\end{algorithmic}

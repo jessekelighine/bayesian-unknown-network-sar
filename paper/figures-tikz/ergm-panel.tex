@@ -1,0 +1,35 @@
+\documentclass{standalone}
+%-----------------------------------------------------------------------------%
+\usepackage{settings-math}
+\usepackage{settings-color}
+%-----------------------------------------------------------------------------%
+%%% TikZ %%%
+\usepackage{tikz}
+% \usetikzlibrary{calc}
+% \usetikzlibrary{positioning}
+% \usetikzlibrary{patterns}
+% \usetikzlibrary{fit}
+% \usetikzlibrary{angles,quotes}
+% \usetikzlibrary{intersections}
+% \usetikzlibrary{decorations.markings}
+%-----------------------------------------------------------------------------%
+
+\begin{document}
+
+\begin{tikzpicture}[thick,line cap=round,xscale=0.8]
+	\tikzstyle{bai}=[solid,circle,draw,inner sep=.8pt,fill=white];
+	\tikzstyle{hei}=[solid,circle,draw,inner sep=.8pt,fill];
+	\node (theta) at (0,0)     {$\ttheta$};
+	\node (W)     at (0,-1)    {$\WW$};
+	\node (y1)    at (-1,-2.5) {$\yy_1$};
+	\node (yt)    at (0,-2.5)  {$\cdots$};
+	\node (yT)    at (1,-2.5)  {$\yy_T$};
+	\node (phi)   at (2,-1)    {$(\lambda,\bbeta,\sigma^2)$};
+	\draw[myred,->,densely dotted] (theta) -- node[left]{\footnotesize{ERGM}} (W);
+	\draw[myblue,->] (W) to[out=260,in=90] node[above left]{\footnotesize{SAR}} (y1);
+	\draw[myblue,->] (W) to[out=-80,in=90] (yT);
+	\draw[myblue,->] (phi) to[out=-100,in=45] (y1);
+	\draw[myblue,->] (phi) to[out=-100,in=30,looseness=1.2] (yT);
+\end{tikzpicture}
+
+\end{document}

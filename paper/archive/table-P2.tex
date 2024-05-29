@@ -1,0 +1,57 @@
+\begin{table}[t]
+	\footnotesize
+	\centering
+	\begin{tabular}{cl|rlrrr}
+		\toprule
+		\multirow{2}{*}{Spec.}
+		& \multirow{2}{*}{Param.}
+		& \multirow{2}{*}{True}
+		& \multirow{2}{*}{Prior Dist.}
+		& \multirow{2}{*}{Post.\ Mean}
+		& \multicolumn{2}{c}{$95\%$ Credible Interval} \\
+		& & & & & $Q_{2.5\%}$ & $Q_{97.5\%}$ \\
+		\midrule
+		\multirow{6}{*}{\shortstack[c]{P20\\$T=12$}}
+        & $\lambda$                        & $0.1$ & $\Uniform(-1,1)$          & $0.0996$  & $0.0495$  & $0.1504$  \\
+        & $\sigma^2$                       & $2$   & $\InverseGamma(1,1)$      & $2.1766$  & $1.6172$  & $2.9838$  \\
+        & $\bbeta_{1}$                     & $1$   & $\Normal(0,30)$           & $1.0013$  & $0.9792$  & $1.0227$  \\
+        & $\bbeta_{2}$                     & $0.5$ & $\Normal(0,30)$           & $0.1887$  & $0.1727$  & $0.2040$  \\
+        & $\ttheta_{\text{\Verb"edges"}}$  & $-2$  & \blue{$\Normal(-2,0.25)$} & $-1.9680$ & $-2.8537$ & $-1.1959$ \\
+        & $\ttheta_{\text{\Verb"mutual"}}$ & $2$   & \blue{$\Normal(2,0.25)$}  & $1.5528$  & $0.4588$  & $2.5846$  \\
+		\midrule
+		\multirow{6}{*}{\shortstack[c]{P21\\$T=12$}}
+        & $\lambda$                        & $0.1$ & $\Uniform(-1,1)$       & $0.0996$  & $0.0501$  & $0.1505$  \\
+        & $\sigma^2$                       & $2$   & $\InverseGamma(1,1)$   & $2.2045$  & $1.6301$  & $3.0302$  \\
+        & $\bbeta_{1}$                     & $1$   & $\Normal(0,30)$        & $1.0017$  & $0.9804$  & $1.0234$  \\
+        & $\bbeta_{2}$                     & $0.5$ & $\Normal(0,30)$        & $0.1887$  & $0.1727$  & $0.2043$  \\
+        & $\ttheta_{\text{\Verb"edges"}}$  & $-2$  & \blue{$\Normal(-2,1)$} & $-1.7415$ & $-3.0813$ & $-0.7993$ \\
+        & $\ttheta_{\text{\Verb"mutual"}}$ & $2$   & \blue{$\Normal(2,1)$}  & $0.9022$  & $-0.7581$ & $2.3364$  \\
+		\midrule
+		\multirow{6}{*}{\shortstack[c]{P22\\$T=12$}}
+        & $\lambda$                        & $0.1$ & $\Uniform(-1,1)$       & $0.0978$  & $0.0470$  & $0.1466$  \\
+        & $\sigma^2$                       & $2$   & $\InverseGamma(1,1)$   & $2.2190$  & $1.6317$  & $3.1347$  \\
+        & $\bbeta_{1}$                     & $1$   & $\Normal(0,30)$        & $1.0026$  & $0.9795$  & $1.0253$  \\
+        & $\bbeta_{2}$                     & $0.5$ & $\Normal(0,30)$        & $0.1891$  & $0.1736$  & $0.2049$  \\
+        & $\ttheta_{\text{\Verb"edges"}}$  & $-2$  & \blue{$\Normal(0,1)$}  & $-1.7877$ & $-3.4018$ & $-0.7241$ \\
+        & $\ttheta_{\text{\Verb"mutual"}}$ & $2$   & \blue{$\Normal(0,1)$}  & $0.2623$  & $-1.3760$ & $1.7652$  \\
+		\midrule
+		\multirow{6}{*}{\shortstack[c]{P23\\$T=12$}}
+        & $\lambda$                        & $0.1$ & $\Uniform(-1,1)$       & $0.0930$  & $0.0454$  & $0.1403$  \\
+        & $\sigma^2$                       & $2$   & $\InverseGamma(1,1)$   & $2.2601$  & $1.6619$  & $3.2626$  \\
+        & $\bbeta_{1}$                     & $1$   & $\Normal(0,30)$        & $1.0042$  & $0.9813$  & $1.0287$  \\
+        & $\bbeta_{2}$                     & $0.5$ & $\Normal(0,30)$        & $0.1894$  & $0.1735$  & $0.2056$  \\
+        & $\ttheta_{\text{\Verb"edges"}}$  & $-2$  & \blue{$\Normal(0,1)$}  & $-1.9940$ & $-4.0807$ & $-0.8732$ \\
+		% & $\ttheta_{\text{\Verb"mutual"}}$ & $2$   & \blue{-}               & -         & -         & -         \\
+		\midrule
+		\multirow{6}{*}{\shortstack[c]{P24\\$T=12$}}
+        & $\lambda$                        & $0.1$ & $\Uniform(-1,1)$       & $0.1001$  & $0.0534$  & $0.1472$  \\
+        & $\sigma^2$                       & $2$   & $\InverseGamma(1,1)$   & $2.2279$  & $1.6419$  & $3.0942$  \\
+        & $\bbeta_{1}$                     & $1$   & $\Normal(0,30)$        & $1.0026$  & $0.9812$  & $1.0250$  \\
+        & $\bbeta_{2}$                     & $0.5$ & $\Normal(0,30)$        & $0.1884$  & $0.1734$  & $0.2043$  \\
+        & $\ttheta_{\text{\Verb"edges"}}$  & $-2$  & \blue{$\Normal(0,10)$} & $-1.4521$ & $-3.5933$ & $-0.2893$ \\
+		% & $\ttheta_{\text{\Verb"mutual"}}$ & $2$   & \blue{-}               & -         & -         & -         \\
+		\bottomrule
+	\end{tabular}
+	\caption{Posterior Statistics}
+	\label{tab:P2}
+\end{table}
